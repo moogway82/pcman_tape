@@ -1,0 +1,11 @@
+00000000  B8C524            mov ax,0x24c5
+00000003  8EC0              mov es,ax
+00000005  B80002            mov ax,0x200
+00000008  B90040            mov cx,0x4000
+0000000B  BB0000            mov bx,0x0
+0000000E  CD15              int 0x15
+00000010  B8C524            mov ax,0x24c5
+00000013  50                push ax
+00000014  B80000            mov ax,0x0
+00000017  50                push ax
+00000018  CB                retf
